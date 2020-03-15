@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/bulma.min.css">
+    <link rel="stylesheet" href="/prism-syntax-hl/prism.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Node.js Documentation</title>
+</head>
+
+<body>
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title"> Mandatory I </h1>
+                <h2 class="subtitle">Node.js Documentation</h2>
+            </div>
+        </div>
+    </section>
+    <div class="columns" style="padding-top: 2em;">
+        <div class="column is-3">
+            <aside class="menu" style="position: sticky; top: 30px;">
+                <p class="menu-label">
+                    Contents
+                </p>
+                <ul class="menu-list">
+                    <li><a href="/javascript" >JavaScript</a>
+                        <ul>
+                            <li><a href="/javascript/1">Variables</a></li>
+                            <li><a href="/javascript/2">Arrays</a></li>
+                            <li><a href="/javascript/3">Loops</a></li>
+                            <li><a href="/javascript/4">Objects</a></li>
+                            <li><a href="/javascript/5">Functions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/jquery">jQuery</a></li>
+                    <li><a href="/node" >Node.js</a>
+                        <ul>
+                            <li><a href="/node/1">Installing</a></li>
+                            <li><a href="/node/2">Usage</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/express" >Express</a>
+                        <ul>
+                            <li><a href="/express/1" class="is-active">First application</a></li>
+                            <li><a href="/express/2">CRUD</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="column is-7 is-offset-1 has-text-justified content">
+            <h1 class="title">First application</h1>
+            <p>Creating an API is extremely simple with the help of Node.js and Express</p>
+            <p class="title is-5">Step 1</p>
+            <p>Navigate to your desired directory in the console using <code>cd</code>.</p>
+            <p class="title is-5">Step 2</p>
+            <p>Create a directory for your application using <code>mkdir</code> and <code>cd</code> into it.</p>
+            <pre><code class="language-sh">mkdir first-api
+cd first-api</code></pre>
+            <p class="title is-5">Step 3</p>
+            <p>Create a file called <code>package.json</code> in this directory and paste the following code in it.</p>
+            <pre><code class="language-js">{
+    "dependencies": {
+        "express": "4.17.1"
+    }
+}
+            </code></pre>
+            <p>This will create a dependency for Express in your project.</p>
+            <p class="title is-5">Step 4</p>
+            <p>Install the dependencies via npm</p>
+            <pre><code class="language-sh">npm install</code></pre>
+            <p class="title is-5">Step 5</p>
+            <p>First, create a file called&nbsp;<code>app.js</code>&nbsp;and import the Express framework:</p>
+            <pre><code class="language-javascript hljs"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+            </code></pre>
+            <p>Now, let's create the Express app:</p>
+            <pre><code class="language-javascript hljs"><span class="hljs-keyword">const</span> app = express();
+            </code></pre>
+            <p>And set our port:</p>
+            <pre><code class="language-javascript hljs"><span class="hljs-keyword">const</span> port = <span class="hljs-number">3000</span>;
+            </code></pre>
+            <p>Now, we can create a simple&nbsp;<code>GET</code>&nbsp;endpoint. When a user hits the endpoint, the message "Hello World, from express" will appear. We'd like to set it to be on the home page, so the URL for the endpoint is&nbsp;<code>/</code>:</p>
+            <pre><code class="language-javascript hljs">app.get(<span class="hljs-string">'/'</span>, (req, res) =&gt; {
+                res.send(<span class="hljs-string">'Hello World, from express'</span>);
+            });
+            </code></pre>
+            <p>At this point, let's start our clients:</p>
+            <pre><code class="language-javascript hljs">app.listen(port, () =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Hello world app listening on port <span class="hljs-subst">${port}</span>!`</span>))
+            </code></pre>
+
+            <p class="title is-5">Step 6</p>
+            <p>Run the application and visit the only endpoint we have via our browser</p>
+            <figure><img src="/img/4.png"></figure>
+        </div>
+    </div>
+    <script src="/prism-syntax-hl/prism.js"></script>
+</body>
+</html>

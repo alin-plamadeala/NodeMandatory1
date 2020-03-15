@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/bulma.min.css">
+    <link rel="stylesheet" href="/prism-syntax-hl/prism.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Node.js Documentation</title>
+</head>
+
+<body>
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title"> Mandatory I </h1>
+                <h2 class="subtitle">Node.js Documentation</h2>
+            </div>
+        </div>
+    </section>
+    <div class="columns" style="padding-top: 2em;">
+        <div class="column is-3">
+            <aside class="menu" style="position: sticky; top: 30px;">
+                <p class="menu-label">
+                    Contents
+                </p>
+                <ul class="menu-list">
+                    <li><a href="/javascript" >JavaScript</a>
+                        <ul>
+                            <li><a href="/javascript/1">Variables</a></li>
+                            <li><a href="/javascript/2">Arrays</a></li>
+                            <li><a href="/javascript/3">Loops</a></li>
+                            <li><a href="/javascript/4">Objects</a></li>
+                            <li><a href="/javascript/5">Functions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/jquery">jQuery</a></li>
+                    <li><a href="/node" >Node.js</a>
+                        <ul>
+                            <li><a href="/node/1">Installing</a></li>
+                            <li><a href="/node/2">Usage</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/express" class="is-active">Express</a>
+                        <ul>
+                            <li><a href="/express/1">First application</a></li>
+                            <li><a href="/express/2">CRUD</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="column is-7 is-offset-1 has-text-justified content">
+            <h1 class="title">Node.js</h1>
+            <p>Express.js, or simply Express, is a web application framework for Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs. It has been called the de facto standard server framework for Node.js.</p>
+            <p class="title is-4">Installing</p>
+            <p>Assuming you&rsquo;ve already installed&nbsp;<a href="https://nodejs.org/">Node.js</a>, create a directory to hold your application, and make that your working directory.</p>
+<pre class="language-sh"><code class="language-sh">$ mkdir myapp
+$ cd myapp
+</code></pre>
+<p>Use the&nbsp;<code>npm init</code>&nbsp;command to create a&nbsp;<code>package.json</code>&nbsp;file for your application. For more information on how&nbsp;<code>package.json</code>&nbsp;works, see&nbsp;<a href="https://docs.npmjs.com/files/package.json">Specifics of npm&rsquo;s package.json handling</a>.</p>
+<pre class="language-sh"><code class="language-sh">$ npm init
+</code></pre>
+<p>This command prompts you for a number of things, such as the name and version of your application. For now, you can simply hit RETURN to accept the defaults for most of them, with the following exception:</p>
+<pre class="language-sh"><code class="language-sh">entry point: (index.js)
+</code></pre>
+<p>Enter&nbsp;<code>app.js</code>, or whatever you want the name of the main file to be. If you want it to be&nbsp;<code>index.js</code>, hit RETURN to accept the suggested default file name.</p>
+<p>Now install Express in the&nbsp;<code>myapp</code>&nbsp;directory and save it in the dependencies list. For example:</p>
+<pre class="language-sh"><code class="language-sh">$ npm install express --save
+</code></pre>
+<p>To install Express temporarily and not add it to the dependencies list:</p>
+<pre class="language-sh"><code class="language-sh">$ npm install express --no-save
+</code></pre>
+        
+        
+        
+        
+        </div>
+    </div>
+    <script src="/prism-syntax-hl/prism.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/bulma.min.css">
+    <link rel="stylesheet" href="/prism-syntax-hl/prism.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Node.js Documentation</title>
+</head>
+
+<body>
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title"> Mandatory I </h1>
+                <h2 class="subtitle">Node.js Documentation</h2>
+            </div>
+        </div>
+    </section>
+    <div class="columns" style="padding-top: 2em;">
+        <div class="column is-3">
+            <aside class="menu" style="position: sticky; top: 30px;">
+                <p class="menu-label">
+                    Contents
+                </p>
+                <ul class="menu-list">
+                    <li><a href="/javascript" >JavaScript</a>
+                        <ul>
+                            <li><a href="/javascript/1">Variables</a></li>
+                            <li><a href="/javascript/2">Arrays</a></li>
+                            <li><a href="/javascript/3">Loops</a></li>
+                            <li><a href="/javascript/4">Objects</a></li>
+                            <li><a href="/javascript/5" class="is-active">Functions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/jquery">jQuery</a></li>
+                    <li><a href="/node">Node.js</a>
+                        <ul>
+                            <li><a href="/node/1">Installing</a></li>
+                            <li><a href="/node/2">Usage</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/express">Express</a>
+                        <ul>
+                            <li><a href="/express/1">First application</a></li>
+                            <li><a href="/express/2">CRUD</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="column is-7 is-offset-1 has-text-justified content">
+            <h1 class="title">Functions</h1>
+            <p>JavaScript provides functions similar to most of the scripting and programming languages.</p>
+<p>In JavaScript, a function allows you to define a block of code, give it a name and then execute it as many times as you want.</p>
+<p>A JavaScript function can be defined using&nbsp;<strong>function</strong>&nbsp;keyword.</p>
+
+<p class="title is-5">Example of function</p>
+<pre><code class="language-js">function addition(a, b) {
+    return a + b;
+}
+
+var sum = addition(2, 5);</code></pre>
+<p class="title is-5">Function Parameters</p>
+<p>A function can have one or more parameters, which will be supplied by the calling code and can be used inside a function. JavaScript is a dynamic type scripting language, so a function parameter can have value of any data type.</p>
+<pre><code class="language-js">function ShowMessage(firstName, lastName) {
+    console.log("Hello " + firstName + " " + lastName);
+}
+
+ShowMessage("Steve", "Jobs");
+ShowMessage("Bill", "Gates");
+ShowMessage(100, 200);</code></pre>
+
+
+
+
+
+        </div>
+    </div>
+    <script src="/prism-syntax-hl/prism.js"></script>
+</body>
+</html>

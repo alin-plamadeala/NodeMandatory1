@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/bulma.min.css">
+    <link rel="stylesheet" href="/prism-syntax-hl/prism.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Node.js Documentation</title>
+</head>
+
+<body>
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title"> Mandatory I </h1>
+                <h2 class="subtitle">Node.js Documentation</h2>
+            </div>
+        </div>
+    </section>
+    <div class="columns" style="padding-top: 2em;">
+        <div class="column is-3">
+            <aside class="menu" style="position: sticky; top: 30px;">
+                <p class="menu-label">
+                    Contents
+                </p>
+                <ul class="menu-list">
+                    <li><a href="/javascript">JavaScript</a>
+                        <ul>
+                            <li><a href="/javascript/1">Variables</a></li>
+                            <li><a href="/javascript/2">Arrays</a></li>
+                            <li><a href="/javascript/3">Loops</a></li>
+                            <li><a href="/javascript/4" class="is-active">Objects</a></li>
+                            <li><a href="/javascript/5">Functions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/jquery">jQuery</a></li>
+                    <li><a href="/node">Node.js</a>
+                        <ul>
+                            <li><a href="/node/1">Installing</a></li>
+                            <li><a href="/node/2">Usage</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/express">Express</a>
+                        <ul>
+                            <li><a href="/express/1">First application</a></li>
+                            <li><a href="/express/2">CRUD</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="column is-7 is-offset-1 has-text-justified content">
+            <h1 class="title">Objects</h1>
+            <p>Object is a non-primitive data type in JavaScript. It is like any other variable, the only difference is that an object holds multiple values in terms of properties and methods. Properties can hold values of primitive data types and methods are functions.</p>
+<p>In other programming languages like Java or C#, you need a class to create an object of it. In JavaScript, an object is a standalone entity because there is no class in JavaScript. </p>
+<p class="title is-5">Defining an object</p>        
+<pre><code class="language-js">var info = {
+"name": "Oliver",
+"age": 25
+};</code></pre>
+
+<p class="title is-5">Retrieve value from object by key</p>        
+<pre><code class="language-js">var myObj = {"message": "Hello, earthling! I bring peace."};
+
+console.log(myObj.message) // dot notation
+console.log(myObj["message"]) // bracket notation</code></pre>
+
+<p class="title is-5">Add a property</p>        
+<pre><code class="language-js">var stackOverflow = {};
+
+stackOverflow.isAllowed = true;</code></pre>
+
+<p class="title is-5">Remove a property</p>        
+<pre><code class="language-js">var thisSong = {"description": "The best song in the world."}
+
+delete thisSong.description;</code></pre>
+
+
+
+</div>
+    </div>
+    <script src="/prism-syntax-hl/prism.js"></script>
+</body>
+</html>

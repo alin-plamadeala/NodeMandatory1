@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/bulma.min.css">
+    <link rel="stylesheet" href="/prism-syntax-hl/prism.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Node.js Documentation</title>
+</head>
+
+<body>
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title"> Mandatory I </h1>
+                <h2 class="subtitle">Node.js Documentation</h2>
+            </div>
+        </div>
+    </section>
+    <div class="columns" style="padding-top: 2em;">
+        <div class="column is-3">
+            <aside class="menu" style="position: sticky; top: 30px;">
+                <p class="menu-label">
+                    Contents
+                </p>
+                <ul class="menu-list">
+                    <li><a href="/javascript" >JavaScript</a>
+                        <ul>
+                            <li><a href="/javascript/1">Variables</a></li>
+                            <li><a href="/javascript/2">Arrays</a></li>
+                            <li><a href="/javascript/3">Loops</a></li>
+                            <li><a href="/javascript/4">Objects</a></li>
+                            <li><a href="/javascript/5">Functions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/jquery" class="is-active">jQuery</a></li>
+                    <li><a href="/node">Node.js</a>
+                        <ul>
+                            <li><a href="/node/1">Installing</a></li>
+                            <li><a href="/node/2">Usage</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/express">Express</a>
+                        <ul>
+                            <li><a href="/express/1">First application</a></li>
+                            <li><a href="/express/2">CRUD</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="column is-7 is-offset-1 has-text-justified content">
+            <h1 class="title">jQuery</h1>
+            <p class="title is-5 is-spaced">What is jQuery?</p>
+            <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+            <p class="title is-5 is-spaced">Selectors</p>
+            <p>jQuery selectors allow you to select and manipulate HTML element(s).</p>
+            <p>jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, values of attributes and much more. It's based on the existing CSS Selectors, and in addition, it has some own custom selectors.</p>
+            <p>All selectors in jQuery start with the dollar sign and parentheses: $().</p>
+
+            <pre><code class="language-js">$("p"); //selects all <<span>p</span>> elements
+$("#test"); // selects all elements with id = "test"
+$(".test") // selects all elements with class = "test"
+            </code></pre>
+<p class="title is-5">Events</p>
+            <p>jQuery is tailor-made to respond to events in an HTML page.</p>
+            <p>Here are some common DOM events:</p>
+            <div class="w3-responsive">
+            <table class="w3-table-all notranslate">
+            <tbody>
+            <tr>
+            <th>Mouse Events</th>
+            <th>Keyboard Events</th>
+            <th>Form Events</th>
+            <th>Document/Window Events</th>
+            </tr>
+            <tr>
+            <td>click</td>
+            <td>keypress</td>
+            <td>submit</td>
+            <td>load</td>
+            </tr>
+            <tr>
+            <td>dblclick</td>
+            <td>keydown</td>
+            <td>change</td>
+            <td>resize</td>
+            </tr>
+            <tr>
+            <td>mouseenter</td>
+            <td>keyup</td>
+            <td>focus</td>
+            <td>scroll</td>
+            </tr>
+            <tr>
+            <td>mouseleave</td>
+            <td>&nbsp;</td>
+            <td>blur</td>
+            <td>unload</td>
+            </tr>
+            </tbody>
+            </table>
+            </div>
+            
+<br>
+            <p>The following example says: When a click event fires on a <<span>p</span>> element; hide the current <<span>p</span>> element:</p>
+<pre><code class="language-js">$("p").click(function(){
+    $(this).hide();
+  });</code></pre>
+
+  <p class="title is-5">jQuery Get or Set Contents and Values</p>
+  <p>Some jQuery methods can be used to either assign or read some value on a selection. A few of these methods are&nbsp;<code>text()</code>,&nbsp;<code>html()</code>,&nbsp;<code>attr()</code>, and&nbsp;<code>val()</code>.</p>
+  <p class="space">When these methods are called with no argument, it is referred to as a&nbsp;<em>getters</em>, because it gets (or reads) the value of the element. When these methods are called with a value as an argument, it's referred to as a&nbsp;<em>setter</em>&nbsp;because it sets (or assigns) that value.</p>
+     
+  <p class="title is-5">Example get content</p>
+<pre><code class="language-js">$(document).ready(function(){
+    // Get HTML contents of first selected paragraph
+    $(".btn-one").click(function(){
+        var str = $("p").html();
+        alert(str);
+    });
+    
+    // Get HTML contents of an element with ID container
+    $(".btn-two").click(function(){
+        var str = $("#container").html();
+        alert(str);
+    });
+});</code></pre>
+
+  
+<p class="title is-5">Example set content</p>
+<pre><code class="language-js">$(document).ready(function(){
+    // Set HTML contents for document's body
+    $("button").click(function(){
+        $("body").html("<p>Hello World!</p>");
+    });
+});</code></pre>
+
+        </div>
+    </div>
+    <script src="/prism-syntax-hl/prism.js"></script>
+</body>
+</html>

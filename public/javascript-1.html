@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/bulma.min.css">
+    <link rel="stylesheet" href="/prism-syntax-hl/prism.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Node.js Documentation</title>
+</head>
+
+<body>
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title"> Mandatory I </h1>
+                <h2 class="subtitle">Node.js Documentation</h2>
+            </div>
+        </div>
+    </section>
+    <div class="columns" style="padding-top: 2em;">
+        <div class="column is-3">
+            <aside class="menu" style="position: sticky; top: 30px;">
+                <p class="menu-label">
+                    Contents
+                </p>
+                <ul class="menu-list">
+                    <li><a href="/javascript" >JavaScript</a>
+                        <ul>
+                            <li><a href="/javascript/1" class="is-active">Variables</a></li>
+                            <li><a href="/javascript/2">Arrays</a></li>
+                            <li><a href="/javascript/3">Loops</a></li>
+                            <li><a href="/javascript/4">Objects</a></li>
+                            <li><a href="/javascript/5">Functions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/jquery">jQuery</a></li>
+                    <li><a href="/node">Node.js</a>
+                        <ul>
+                            <li><a href="/node/1">Installing</a></li>
+                            <li><a href="/node/2">Usage</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/express">Express</a>
+                        <ul>
+                            <li><a href="/express/1">First application</a></li>
+                            <li><a href="/express/2">CRUD</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="column is-7 is-offset-1 has-text-justified content">
+            <h1 class="title">JavaScript Variables</h1>
+            <p>Variable means anything that can vary. JavaScript includes variables which hold the data value and it can be changed anytime.</p>
+            <p>JavaScript uses reserved keyword&nbsp;<strong>var</strong>&nbsp;to declare a variable. A variable must have a unique name. You can assign a value to a variable using&nbsp;<strong>equal to</strong>&nbsp;(=) operator when you declare it or before using it.</p>
+            <p class="title is-5 is-spaced">Variable declaration and initialization</p>
+            <pre><code class="language-javascript">var firstName = "Alin"; // variable stores string value
+var lastName = "Plamadeala";</code></pre>
+            <p class="title is-5 is-spaced">Display in console</p>
+            <pre><code class="language-javascript">console.log("My first name is", firstName, "and my last name is", lastName);
+console.log(`My first name is ${firstName} and my last name is ${lastName}`);
+//Output: My first name is Alin and my last name is Plamadeala</code></pre>
+
+            <h1 class="title">JavaScript Data Types</h1>
+            <p>JavaScript includes data types similar to other programming languages like Java or C#. Data type indicates characteristics of data. It tells the compiler whether the data value is numeric, alphabetic, date etc., so that it can perform the appropriate operation.</p>
+<p>JavaScript includes primitive and non-primitive data types as per latest ECMAScript 5.1.</p>
+<p class="title is-5">Primitive Data Types</p>
+<ol>
+<li>String</li>
+<li>Number</li>
+<li>Boolean</li>
+<li>Null</li>
+<li>Undefined</li>
+</ol>
+<p class="title is-5">Non-primitive Data Type</p>
+<ol>
+<li>Object</li>
+<li>Date</li>
+<li>Array</li>
+</ol>
+            <p class="title is-5 is-spaced">Examples</p>
+            <pre class="line-numbers"><code class="language-javascript">var year = "2017"; //String literal
+var number = 1; //Number 
+
+// Add the year plus the number
+var newYear = parseInt(year) + number; //or
+var newYear = Number(year) + number; //or
+var newYear = +(year) + 1;
+
+console.log(newYear);
+//Output: 2018
+
+// Getting a character by index
+
+var letters = "abc";
+// Getting the character "c"
+
+console.log(letters[2]);
+
+console.log(letters.charAt(2));
+
+console.log(letters.substring(2));
+
+
+var fact = "You are learning javascript!";
+
+// capitalize the J in Javascript
+
+var newFact = fact.replace("j", "J");
+
+console.log(newFact);
+
+console.log(fact.indexOf("j"));</code></pre>
+
+        </div>
+    </div>
+    <script src="/prism-syntax-hl/prism.js"></script>
+</body>
+</html>

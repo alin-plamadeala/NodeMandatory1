@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/bulma.min.css">
+    <link rel="stylesheet" href="/prism-syntax-hl/prism.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Node.js Documentation</title>
+</head>
+
+<body>
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title"> Mandatory I </h1>
+                <h2 class="subtitle">Node.js Documentation</h2>
+            </div>
+        </div>
+    </section>
+    <div class="columns" style="padding-top: 2em;">
+        <div class="column is-3">
+            <aside class="menu" style="position: sticky; top: 30px;">
+                <p class="menu-label">
+                    Contents
+                </p>
+                <ul class="menu-list">
+                    <li><a href="/javascript" >JavaScript</a>
+                        <ul>
+                            <li><a href="/javascript/1">Variables</a></li>
+                            <li><a href="/javascript/2">Arrays</a></li>
+                            <li><a href="/javascript/3" class="is-active">Loops</a></li>
+                            <li><a href="/javascript/4">Objects</a></li>
+                            <li><a href="/javascript/5">Functions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/jquery">jQuery</a></li>
+                    <li><a href="/node">Node.js</a>
+                        <ul>
+                            <li><a href="/node/1">Installing</a></li>
+                            <li><a href="/node/2">Usage</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/express">Express</a>
+                        <ul>
+                            <li><a href="/express/1">First application</a></li>
+                            <li><a href="/express/2">CRUD</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="column is-7 is-offset-1 has-text-justified content">
+            <h1 class="title">Loops</h1>
+            <p>JavaScript includes for loop like Java or C#. Use for loop to execute code repeatedly.</p>
+            <p>The for loop requires following three parts.</p>
+            <ul>
+            <li>Initializer: Initialize a counter variable to start with</li>
+            <li>Condition: specify a condition that must evaluate to true for next iteration</li>
+            <li>Iteration: increase or decrease counter</li>
+            </ul>
+            <p class="title is-5">Example</p>
+<pre><code class="language-js">for (var i = 0; i < 5; i++)
+{
+    console.log(i);
+}
+
+//Output: 0 1 2 3 4
+</code></pre>
+<p class="title is-5">Example: Access Array using for Loop</p>
+<pre><code class="language-js">var stringArray = new Array("one", "two", "three", "four");
+for (var i = 0; i < stringArray.length ; i++) 
+{
+    stringArray[i];
+}</code></pre>
+
+<p>JavaScript includes while loop to execute code repeatedly till it satisfies a specified condition. Unlike for loop, while loop only requires condition expression.</p>
+<p class="title is-5">Example</p>
+<pre><code class="language-js">var i =0;
+
+while(i < 5)
+{
+    console.log(i);
+    i++;
+}
+
+//Output: 0 1 2 3 4</code></pre>
+
+
+
+        </div>
+    </div>
+    <script src="/prism-syntax-hl/prism.js"></script>
+</body>
+</html>
